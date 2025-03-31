@@ -33,7 +33,7 @@ export const aboutMe: AboutMe = {
   linkedinUsername: "guy-kaplan-482a501b7",
   twitterUsername: "GKaplan38844",
   // blogUrl: "https://",
-  cvUrl: "https://", // TODO: Add CV
+  cvUrl: "https://", //TODO: Add CV
   institutionUrl: "https://en.huji.ac.il",
   // altName: "",
   // secretDescription: "I like dogs.",
