@@ -11,11 +11,11 @@ import { experienceData } from "@/data/experience";
 import { PortfolioEntry } from "@/components/portfolio-entry";
 import { portfolioData } from "@/data/portfolio";
 import { sectionOrder, Section } from "@/data/section-order";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#FFFCF8]">
-      {/* Don't have a great call on whether max-w-screen-xl is better */}
       <div className="max-w-screen-lg mx-auto px-8 py-24">
         {/* Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-2">
@@ -29,19 +29,31 @@ export default function Home() {
 
           {/* Right Column - Scrolling Content */}
           <div className="col-span-12 md:col-span-7 md:col-start-6 space-y-24">
-            {/* About section is typically first */}
+            {/* About Section: Description with Decal Image below */}
             {aboutMe.description && (
               <section>
-                <p
-                  className="font-serif text-sm leading-relaxed text-zinc-700 [&_a]:underline [&_a]:text-zinc-900 [&_a:hover]:text-zinc-600"
-                  dangerouslySetInnerHTML={{ __html: aboutMe.description }}
-                />
+                <div className="flex flex-col items-start">
+                  <div>
+                    <p
+                      className="font-serif text-sm leading-relaxed text-zinc-700 [&_a]:underline [&_a]:text-zinc-900 [&_a:hover]:text-zinc-600"
+                      dangerouslySetInnerHTML={{ __html: aboutMe.description }}
+                    />
+                  </div>
+                  <div className="mt-4">
+                    <Image
+                      src="/telaviv-art.png"
+                      alt="Tel Aviv Art Decal"
+                      width={300}   // adjust width as needed
+                      height={200}  // adjust height as needed
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
               </section>
             )}
 
             {/* Map through sectionOrder to render sections in correct order */}
             {sectionOrder.map((sectionName) => {
-              // Most of this is redundant... but in case it needs to be unique.
               switch (sectionName) {
                 case Section.News:
                   return (
