@@ -9,18 +9,33 @@ export interface Education {
 
 export const educationData: Education[] = [
   // If you don't want to show education, just make the array empty.
+  // {
+  //   year: "2024—Present",
+  //   institution: "Hebrew University of Jerusalem",
+  //   degree: "Ph.D. in Computer Science",
+  //   advisor: "Prof. Roy Schwartz",
+  // },
   {
-    year: "2021—Present",
-    institution: "Stanford University",
-    degree: "Ph.D. in Computer Science",
-    advisor: "Prof. Sarah Johnson",
+    year: "2023—Present",
+    institution: "Hebrew University of Jerusalem",
+    degree: "MSc. in Computer Science",
+    advisor: "Prof. Roy Schwartz",
+    thesis: "Detokenization in LLMs",
   },
   {
-    year: "2017—2021",
-    institution: "Massachusetts Institute of Technology",
-    degree: "B.S. in Computer Science and Mathematics",
-    thesis: "Algorithmic Approaches to Causal Discovery",
-    // Optional links to thesis
-    // thesisUrl: "https://dspace.mit.edu/handle/1721.1/149111"
+    year: "2019—2022",
+    institution: "The Open University",
+    degree: "BSc in Computer Science",
   },
+  {
+    year: "2019—2022",
+    institution: "Tel Aviv University",
+    degree: "BA. in Economics",
+  },
+  {
+    year: "2014",
+    institution: "Haifa University",
+    degree: "BA. in General Studies",
+  }
+
 ];

@@ -9,22 +9,26 @@ export interface Experience {
 }
 
 export const experienceData: Experience[] = [
-  {
-    date: "Summer 2023",
-    title: "Research Intern",
-    company: "DeepMind",
+    {
+    date: "2023-present",
+    title: "Chief Scientist Officer",
+    company: "BRIGHT",
+    companyUrl: "https://www.bright-forensics.com/",
     description:
-      "Developed novel algorithms for causal structure learning in reinforcement learning settings",
-    advisor: "Peter Wang",
-    companyUrl: "https://deepmind.com",
+        "Developing model based system for assisting forensics odontologists in identifying human remains"
+   },
+    {
+    date: "2022-2025",
+    title: "Data Science & SWE",
+    company: "Microsoft",
+    description:
+      "Developed novel algorithms for risk score user assessment over Microsoft Defender platform",
   },
   {
-    date: "Summer 2022",
-    title: "Research Intern",
-    company: "Google Research",
+    date: "Summer 2021",
+    title: "SWE Intern",
+    company: "Yahoo!",
     description:
-      "Worked on improving robustness of large language models to distribution shifts",
-    manager: "Elise Brown",
-    companyUrl: "https://google.com",
+      "Worked on improving personal recommendations for Yahoo! advertising platform",
   },
 ];
