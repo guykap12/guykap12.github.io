@@ -23,7 +23,7 @@ export const aboutMe: AboutMe = {
   institution: "Hebrew University of Jerusalem",
   // Note that links work in the description
   description:
-      "I’m a first-year <a href='https://en.huji.ac.il/'>PhD candidate</a> in the <a href='https://schwartz-lab-huji.github.io/'>Schwartslab</a> of <a href='https://x.com/nlphuji/'>Huji-NLP</a> at the Hebrew University.<br><br>My research focuses on leveraging compression-optimized tokenizers to boost the efficiency and interpretability of language models while also exploring multimodality to build more robust and scalable systems. <br><br>When I’m not delving into cutting-edge NLP challenges, I’m a passionate Tel Aviv fan, a devoted cat lover, a sea enthusiast, and arguably the most enthusiastic reader around.",
+      "I’m a first-year PhD candidate in the <a href='https://schwartz-lab-huji.github.io/'>Schwartslab</a> of <a href='https://x.com/nlphuji/'>Huji-NLP</a> at the <a href='https://en.huji.ac.il/'>Hebrew University</a>.<br><br>My research focuses on leveraging compression-optimized tokenizers to boost the efficiency and interpretability of language models while also exploring multimodality to build more robust and scalable systems. <br><br>When I’m not delving into cutting-edge NLP challenges, I’m a passionate Tel Aviv fan, a devoted cat lover, a sea enthusiast, and arguably the most enthusiastic reader around.",
   email: "guy.kaplan3@mail.huji.ac.il",
   imageUrl:
   "https://q2kdtpomknobn1v5.public.blob.vercel-storage.com/image-D2eQYmJbWlgdNgNgnXwtY9kUFNbZkG.jpeg",
