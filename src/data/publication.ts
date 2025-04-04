@@ -14,6 +14,17 @@ export interface Publication {
 export const publicationData: Publication[] = [
   // If you don't want to show publications, just make the array empty.
   {
+    year: "",
+    conference: "preprint",
+    title: "Follow the Flow: On Information Flow Across Textual Tokens in Text-to-Image Models",
+    authors: "Guy Kaplan*, Michael Toker*, Yuval Reif, Yonatan Belinkov, Roy Schwartz",
+    paperUrl: "https://arxiv.org/abs/2504.01137",
+    codeUrl: "https://github.com/tokeron/lens",
+    //bibtex: "https://arxiv.org/abs/2409.15476.bib",
+    tldr: "The study shows that only a few tokens per word capture its core meaning, leaving many redundant tokens that can impair image generation. Removing these redundant tokens improves generation quality, while patching leaked token representations with their isolated versions effectively mitigates semantic leakage.",
+    imageUrl: "/zebra.gif",
+  },
+  {
     year: "2025",
     conference: "ICLR",
     title: "From Tokens to Words: On the Inner Lexicon of LLMs",
