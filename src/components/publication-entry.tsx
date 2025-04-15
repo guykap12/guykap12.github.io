@@ -73,6 +73,18 @@ export function PublicationEntry({
               <span className="tracking-wider uppercase">BibTeX</span>
             </a>
           )}
+          {publication.pageUrl && (
+            <a
+              href={publication.pageUrl}
+              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
+            >
+              <ArrowUpRight
+                size={12}
+                className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
+              />
+              <span className="tracking-wider uppercase">Page</span>
+            </a>
+          )}
         </div>
         {publication.tldr && (
           <p className="text-sm italic text-zinc-600 mt-4">
