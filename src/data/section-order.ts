@@ -8,8 +8,8 @@ export enum Section {
 
 export const sectionOrder = [
   Section.News,
-  Section.Education,
   Section.Publication,
+  Section.Education,
   Section.Experience,
   Section.Portfolio,
 ];
