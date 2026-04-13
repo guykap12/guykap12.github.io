@@ -23,7 +23,7 @@ export function PublicationEntry({
       )}
       <div className="flex flex-col flex-1">
         <div className="flex flex-row gap-4 items-center mb-2">
-          <p className={`text-zinc-500 ${publication.conference === 'ICLR' ? 'text-sm font-semibold text-blue-600' : 'text-xs'}`}>
+          <p className="text-sm font-semibold text-zinc-500">
             {publication.conference} {publication.year}
           </p>
           {publication.award && (

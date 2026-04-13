@@ -58,14 +58,12 @@ export const preprintData: Preprint[] = [
     year: "2026",
     title: "SFT-Induced Hallucinations as a Continual Learning Problem",
     authors: "Guy Kaplan, Zorik Gekhman, Zhen Zhu, Yuval Reif, Lotem Rozner, Swabha Swayamdipta, Derek Hoiem, Roy Schwartz",
-    venue: "Submitted to CoLM 2026",
     imageUrl: "/hallucinations_fig.png",
   },
   {
     year: "2026",
     title: "More Than Words: Compositional Tokenization for Efficient Language Models",
     authors: "Yuval Reif, Guy Kaplan, Roy Schwartz",
-    venue: "Submitted to CoLM 2026",
     imageUrl: "/more_than_words_main_example.png",
   },
 ];
