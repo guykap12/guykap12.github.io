@@ -9,26 +9,31 @@ export interface Experience {
 }
 
 export const experienceData: Experience[] = [
-    {
-    date: "2023-present",
-    title: "Chief Scientist Officer",
-    company: "BRIGHT",
-    companyUrl: "https://www.bright-forensics.com/",
-    description:
-        "Developing model based system for assisting forensics odontologists in identifying human remains"
-   },
-    {
-    date: "2022-2025",
-    title: "Data Science & SWE",
-    company: "Microsoft",
-    description:
-      "Developed novel algorithms for risk score user assessment over Microsoft Defender platform",
+  {
+    date: "Sep. 2025 – Present",
+    title: "Visiting Researcher",
+    company: "University of Southern California (USC)",
+    companyUrl: "https://www.usc.edu/",
   },
   {
-    date: "Summer 2021",
-    title: "SWE Intern",
-    company: "Yahoo!",
-    description:
-      "Worked on improving personal recommendations for Yahoo! advertising platform",
+    date: "Oct. 2023 – Present",
+    title: "Chief Scientist Officer",
+    company: "Bright Forensic Innovations",
+    companyUrl: "https://www.bright-forensics.com/",
+  },
+  {
+    date: "Mar. 2024 – Jan. 2025",
+    title: "Data Scientist",
+    company: "Microsoft",
+  },
+  {
+    date: "Mar. 2022 – Mar. 2024",
+    title: "Software Engineer",
+    company: "Microsoft",
+  },
+  {
+    date: "Oct. 2011 – Sep. 2019",
+    title: "Naval Officer (Major)",
+    company: "Israeli Navy, Air Patrol Unit",
   },
 ];

@@ -1,15 +1,13 @@
 import { EducationEntry } from "@/components/education-entry";
 import { educationData } from "@/data/education";
 import { PublicationEntry } from "@/components/publication-entry";
-import { publicationData } from "@/data/publication";
+import { publicationData, preprintData } from "@/data/publication";
 import { ProfileSection } from "@/components/profile-section";
 import { aboutMe } from "@/data/aboutme";
 import { NewsEntry } from "@/components/news-entry";
 import { newsData } from "@/data/news";
 import { ExperienceEntry } from "@/components/experience-entry";
 import { experienceData } from "@/data/experience";
-import { PortfolioEntry } from "@/components/portfolio-entry";
-import { portfolioData } from "@/data/portfolio";
 import { sectionOrder, Section } from "@/data/section-order";
 import Image from "next/image";
 
@@ -59,16 +57,14 @@ export default function Home() {
                   return (
                     newsData.length > 0 && (
                       <section key={sectionName}>
-                        <h2 className="font-serif text-xl mb-12 tracking-wide uppercase">
+                        <h2 className="font-serif text-xl mb-6 tracking-wide uppercase">
                           News
                         </h2>
-                        <div className="space-y-12">
+                        <ul className="max-h-72 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-zinc-200 scrollbar-track-transparent">
                           {newsData.map((news, index) => (
-                            <div key={index}>
-                              <NewsEntry news={news} />
-                            </div>
+                            <NewsEntry key={index} news={news} />
                           ))}
-                        </div>
+                        </ul>
                       </section>
                     )
                   );
@@ -104,6 +100,47 @@ export default function Home() {
                             </div>
                           ))}
                         </div>
+                        {preprintData.length > 0 && (
+                          <>
+                            <h3 className="font-serif text-lg mt-16 mb-8 tracking-wide text-zinc-500 uppercase">
+                              Preprints
+                            </h3>
+                            <div className="space-y-8">
+                              {preprintData.map((preprint, index) => (
+                                <div key={index} className="flex flex-col sm:flex-row gap-6">
+                                  {preprint.imageUrl && (
+                                    <div className="w-full sm:w-1/4 min-w-[160px]">
+                                      <Image
+                                        src={preprint.imageUrl}
+                                        alt={preprint.title}
+                                        width={160}
+                                        height={0}
+                                        style={{ height: "auto", width: "100%" }}
+                                        className="rounded-lg"
+                                      />
+                                    </div>
+                                  )}
+                                  <div className="flex flex-col flex-1 text-sm text-zinc-600 leading-relaxed">
+                                    <p className="font-serif text-md text-zinc-900 mb-1">{preprint.title}</p>
+                                    <p className="text-zinc-500 mb-1">
+                                      {preprint.authors.split(/(Guy Kaplan)/).map((part, i) =>
+                                        part === "Guy Kaplan" ? <strong key={i}>{part}</strong> : part
+                                      )}
+                                    </p>
+                                    {preprint.venue && (
+                                      <p className="italic text-zinc-400 mb-2">{preprint.venue}</p>
+                                    )}
+                                    {preprint.paperUrl && (
+                                      <a href={preprint.paperUrl} className="underline text-zinc-500 hover:text-zinc-800 text-xs tracking-wider uppercase">
+                                        arXiv
+                                      </a>
+                                    )}
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          </>
+                        )}
                       </section>
                     )
                   );
@@ -120,21 +157,6 @@ export default function Home() {
                               key={index}
                               experience={experience}
                             />
-                          ))}
-                        </div>
-                      </section>
-                    )
-                  );
-                case Section.Portfolio:
-                  return (
-                    portfolioData.length > 0 && (
-                      <section key={sectionName}>
-                        <h2 className="font-serif text-xl mb-12 tracking-wide uppercase">
-                          Portfolio
-                        </h2>
-                        <div className="space-y-12">
-                          {portfolioData.map((portfolio, index) => (
-                            <PortfolioEntry key={index} portfolio={portfolio} />
                           ))}
                         </div>
                       </section>

@@ -23,7 +23,7 @@ export const aboutMe: AboutMe = {
   institution: "Hebrew University of Jerusalem",
   // Note that links work in the description
   description:
-      "I’m a first-year PhD candidate in the <a href='https://schwartz-lab-huji.github.io/'>Schwartslab</a> of <a href='https://x.com/nlphuji/'>Huji-NLP</a> at the <a href='https://en.huji.ac.il/'>Hebrew University</a>.<br><br>My research focuses on leveraging compression-optimized tokenizers to boost the efficiency and interpretability of language models while also exploring multimodality to build more robust and scalable systems. <br><br>When I’m not delving into cutting-edge NLP challenges, I’m a passionate Tel Aviv fan, a devoted cat parent, a sea lover, and arguably the most enthusiastic reader around.",
+      "I’m a first-year PhD candidate in the <a href=’https://schwartz-lab-huji.github.io/’>Schwartslab</a> of <a href=’https://x.com/nlphuji/’>Huji-NLP</a> at the <a href=’https://en.huji.ac.il/’>Hebrew University</a>. I’m currently on a full-year research visit at <a href=’https://dill-lab.github.io/’>DILL Lab</a> with <a href=’https://swabhs.com/’>Swabha Swayamdipta</a>.<br><br>I'm broadly interested in how language models form and organize meaning internally. My research revolves around the <i>inner lexicon</i>: the emergent word-level representations LLMs build from sub-word fragments, and how understanding this hidden structure can make models more faithful, efficient, and interpretable.<br><br>When I’m not delving into cutting-edge NLP challenges, I’m a passionate Tel Aviv fan, a devoted cat parent, a sea lover, and arguably the most enthusiastic reader around.",
   email: "guy.kaplan3@mail.huji.ac.il",
   imageUrl:
   "https://q2kdtpomknobn1v5.public.blob.vercel-storage.com/image-D2eQYmJbWlgdNgNgnXwtY9kUFNbZkG.jpeg",
@@ -33,7 +33,7 @@ export const aboutMe: AboutMe = {
   linkedinUsername: "guy-kaplan-482a501b7",
   twitterUsername: "GKaplan38844",
   // blogUrl: "https://",
-  cvUrl: "/Guy_s_CV.pdf",
+  cvUrl: "/Guy_s_CVV2.pdf",
   institutionUrl: "https://en.huji.ac.il",
   // altName: "",
   // secretDescription: "I like dogs.",

@@ -15,7 +15,8 @@ export function PublicationEntry({
             src={publication.imageUrl}
             alt={publication.title}
             width={160}
-            height={200}
+            height={0}
+            style={{ height: "auto", width: "100%" }}
             className="rounded-lg transition-all duration-300"
           />
         </div>
@@ -35,7 +36,15 @@ export function PublicationEntry({
           )}
         </div>
         <h3 className="font-serif text-md mb-3">{publication.title}</h3>
-        <p className="text-sm text-zinc-600 mb-4">{publication.authors}</p>
+        <p className="text-sm text-zinc-600 mb-4">
+          {publication.authors.split(/(Guy Kaplan\*?)/).map((part, i) =>
+            part === "Guy Kaplan" || part === "Guy Kaplan*" ? (
+              <strong key={i}>{part}</strong>
+            ) : (
+              part
+            )
+          )}
+        </p>
         <div className="flex flex-row gap-6">
           {publication.paperUrl && (
             <a

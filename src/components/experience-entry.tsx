@@ -6,7 +6,7 @@ export function ExperienceEntry({ experience }: { experience: Experience }) {
       <span className="text-xs text-zinc-500 mt-1">{experience.date}</span>
       <div className="col-span-3 flex flex-col">
         <h3 className="text-base font-serif">
-          {experience.title} —{" "}
+          {experience.title},{" "}
           {experience.companyUrl ? (
             <a
               href={experience.companyUrl}
