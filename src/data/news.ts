@@ -19,14 +19,14 @@ export const newsData: News[] = [
     link: "https://arxiv.org/abs/2510.17001",
   },
   {
+    date: "Jan. 2026",
+    title: "Visiting researcher at USC",
+    description: "Started a full-year research visit at USC.",
+  },
+  {
     date: "Dec. 2025",
     title: "Invited talk at TAU",
     description: "Gave an invited talk on \"The Inner Lexicon of LLMs\" at Tel Aviv University.",
-  },
-  {
-    date: "Sep. 2025",
-    title: "Visiting researcher at USC",
-    description: "Started a full-year research visit at USC.",
   },
   {
     date: "Aug. 2025",
