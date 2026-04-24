@@ -56,9 +56,10 @@ export interface Preprint {
 export const preprintData: Preprint[] = [
   {
     year: "2026",
-    title: "SFT-Induced Hallucinations as a Continual Learning Problem",
+    title: "Why Fine-Tuning Encourages Hallucinations and How to Fix It",
     authors: "Guy Kaplan, Zorik Gekhman, Zhen Zhu, Yuval Reif, Lotem Rozner, Swabha Swayamdipta, Derek Hoiem, Roy Schwartz",
     imageUrl: "/hallucinations_fig.png",
+    paperUrl: "https://arxiv.org/abs/2604.15574",
   },
   {
     year: "2026",
