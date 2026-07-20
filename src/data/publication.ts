@@ -15,6 +15,22 @@ export interface Publication {
 export const publicationData: Publication[] = [
   {
     year: "2026",
+    conference: "COLM",
+    title: "Why Fine-Tuning Encourages Hallucinations and How to Fix It",
+    authors: "Guy Kaplan, Zorik Gekhman, Zhen Zhu, Yuval Reif, Lotem Rozner, Swabha Swayamdipta, Derek Hoiem, Roy Schwartz",
+    paperUrl: "https://arxiv.org/abs/2604.15574",
+    imageUrl: "/hallucinations_fig.png",
+  },
+  {
+    year: "2026",
+    conference: "COLM",
+    title: "More Than Words: Compositional Tokenization for Efficient Language Models",
+    authors: "Yuval Reif, Guy Kaplan, Roy Schwartz",
+    paperUrl: "https://openreview.net/pdf?id=Yw16kddexd",
+    imageUrl: "/more_than_words_main_example.png",
+  },
+  {
+    year: "2026",
     conference: "ACL",
     title: "Follow the Flow: On Information Flow Across Textual Tokens in Text-to-Image Models",
     authors: "Guy Kaplan*, Michael Toker*, Yuval Reif, Yonatan Belinkov, Roy Schwartz (*equal contribution)",
@@ -53,18 +69,4 @@ export interface Preprint {
   imageUrl?: string;
 }
 
-export const preprintData: Preprint[] = [
-  {
-    year: "2026",
-    title: "Why Fine-Tuning Encourages Hallucinations and How to Fix It",
-    authors: "Guy Kaplan, Zorik Gekhman, Zhen Zhu, Yuval Reif, Lotem Rozner, Swabha Swayamdipta, Derek Hoiem, Roy Schwartz",
-    imageUrl: "/hallucinations_fig.png",
-    paperUrl: "https://arxiv.org/abs/2604.15574",
-  },
-  {
-    year: "2026",
-    title: "More Than Words: Compositional Tokenization for Efficient Language Models",
-    authors: "Yuval Reif, Guy Kaplan, Roy Schwartz",
-    imageUrl: "/more_than_words_main_example.png",
-  },
-];
+export const preprintData: Preprint[] = [];

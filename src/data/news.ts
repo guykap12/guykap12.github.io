@@ -7,6 +7,18 @@ export interface News {
 
 export const newsData: News[] = [
   {
+    date: "Jul. 2026",
+    title: "COLM 2026",
+    description: "Paper accepted at COLM 2026: \"Why Fine-Tuning Encourages Hallucinations and How to Fix It\".",
+    link: "https://arxiv.org/abs/2604.15574",
+  },
+  {
+    date: "Jul. 2026",
+    title: "COLM 2026",
+    description: "Paper accepted at COLM 2026: \"More Than Words: Compositional Tokenization for Efficient Language Models\".",
+    link: "https://openreview.net/pdf?id=Yw16kddexd",
+  },
+  {
     date: "Apr. 2026",
     title: "ACL 2026",
     description: "Paper accepted at ACL 2026: \"Follow the Flow: On Information Flow Across Textual Tokens in Text-to-Image Models\".",
