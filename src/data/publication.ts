@@ -28,6 +28,7 @@ export const publicationData: Publication[] = [
     authors: "Yuval Reif, Guy Kaplan, Roy Schwartz",
     paperUrl: "https://openreview.net/pdf?id=Yw16kddexd",
     imageUrl: "/more_than_words_main_example.png",
+    award: "Oral Spotlight (top <1%)",
   },
   {
     year: "2026",

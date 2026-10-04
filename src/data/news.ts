@@ -7,6 +7,12 @@ export interface News {
 
 export const newsData: News[] = [
   {
+    date: "Oct. 2026",
+    title: "COLM 2026 Oral Spotlight",
+    description: "\"More Than Words: Compositional Tokenization for Efficient Language Models\" was selected as an Oral Spotlight at COLM 2026 (top <1% of submissions).",
+    link: "https://openreview.net/pdf?id=Yw16kddexd",
+  },
+  {
     date: "Aug. 2026",
     title: "PBC (VATAT) Doctoral Fellowship in AI",
     description: "Awarded the PBC (VATAT) Fellowship for Outstanding Doctoral Students in Artificial Intelligence and Data Science by the Council for Higher Education of Israel \u2014 Israel's national doctoral fellowship under the National Initiative for AI and Data Science, granting up to 20 awards countrywide per cycle.",

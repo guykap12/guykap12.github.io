@@ -12,7 +12,7 @@ export const educationData: Education[] = [
     year: "Aug. 2025 – Present",
     institution: "The Hebrew University of Jerusalem",
     degree: "PhD Student, Computer Science",
-    advisor: "Prof. Roy Schwartz",
+    advisor: "Prof. Roy Schwartz (HUJI) and Prof. Swabha Swayamdipta (USC)",
   },
   {
     year: "Oct. 2022 – Aug. 2025",
