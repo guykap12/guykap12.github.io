@@ -10,7 +10,7 @@ export interface Education {
 export const educationData: Education[] = [
   {
     year: "Aug. 2025 – Present",
-    institution: "The Hebrew University of Jerusalem",
+    institution: "The Hebrew University of Jerusalem (HUJI) & University of Southern California (USC)",
     degree: "PhD Student, Computer Science",
     advisor: "Prof. Roy Schwartz (HUJI) and Prof. Swabha Swayamdipta (USC)",
   },

@@ -57,6 +57,26 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
           ) : (
             aboutMe.institution
           )}
+          {aboutMe.secondaryTitle && aboutMe.secondaryInstitution && (
+            <>
+              <br />
+              <br />
+              {aboutMe.secondaryTitle}
+              <br />
+              {aboutMe.secondaryInstitutionUrl ? (
+                <a
+                  href={aboutMe.secondaryInstitutionUrl}
+                  className="hover:text-zinc-900 transition-colors duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {aboutMe.secondaryInstitution}
+                </a>
+              ) : (
+                aboutMe.secondaryInstitution
+              )}
+            </>
+          )}
         </p>
         <div className="flex gap-6 mb-6">
           {aboutMe.blogUrl && (

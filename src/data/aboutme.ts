@@ -15,12 +15,15 @@ export interface AboutMe {
   secretDescription?: string; // Gets placed in the bottom
   altName?: string;
   institutionUrl?: string;
+  secondaryTitle?: string;
+  secondaryInstitution?: string;
+  secondaryInstitutionUrl?: string;
 }
 
 export const aboutMe: AboutMe = {
   name: "Guy Kaplan",
   title: "Ph.D. Student",
-  institution: "Hebrew University of Jerusalem",
+  institution: "Hebrew University of Jerusalem (HUJI)",
   // Note that links work in the description
   description:
       "I’m a CS PhD student advised by <a href=’https://schwartz-lab-huji.github.io/’>Roy Schwartz</a> (<a href=’https://x.com/nlphuji/’>Huji-NLP</a>) and <a href=’https://swabhs.com/’>Swabha Swayamdipta</a> (<a href=’https://dill-lab.github.io/’>DILL Lab</a>, USC).<br><br>I'm broadly interested in how language models form and organize meaning internally: how they encode words, facts, and concepts into structured internal representations. My research investigates this hidden architecture to understand what models know, how they know it, and how leveraging that structure can make them more faithful, efficient, and interpretable.<br><br>When I’m not delving into cutting-edge NLP challenges, I’m a passionate Tel Aviv fan, a devoted cat parent, a sea lover, and arguably the most enthusiastic reader around.",
@@ -35,6 +38,9 @@ export const aboutMe: AboutMe = {
   // blogUrl: "https://",
   cvUrl: "/Guy_CV.pdf",
   institutionUrl: "https://en.huji.ac.il",
+  secondaryTitle: "Visiting Researcher",
+  secondaryInstitution: "University of Southern California (USC)",
+  secondaryInstitutionUrl: "https://www.usc.edu/",
   // altName: "",
   // secretDescription: "I like dogs.",
 };
