@@ -16,15 +16,15 @@ export const experienceData: Experience[] = [
     companyUrl: "https://www.usc.edu/",
   },
   {
-    date: "Oct. 2023 – Present",
-    title: "Chief Scientist Officer",
-    company: "Bright Forensic Innovations",
-    companyUrl: "https://www.bright-forensics.com/",
-  },
-  {
     date: "Mar. 2024 – Jan. 2025",
     title: "Data Scientist",
     company: "Microsoft",
+  },
+  {
+    date: "Oct. 2023 – Oct. 2026",
+    title: "Chief Scientist Officer",
+    company: "Bright Forensic Innovations",
+    companyUrl: "https://www.bright-forensics.com/",
   },
   {
     date: "Mar. 2022 – Mar. 2024",
